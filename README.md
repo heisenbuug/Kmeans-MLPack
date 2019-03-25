@@ -21,4 +21,9 @@ The ‘means’ in the K-means refers to averaging of the data; that is, finding
 * C++11
 * MLPack: https://github.com/mlpack/mlpack
 * Ubuntu
+## To compile
+* Install MLpack successfully and dont forget to install dpendencies:
+This line will do the trick `sudo apt-get install libboost-math-dev libboost-program-options-dev libboost-test-dev libboost-serialization-dev libarmadillo-dev binutils-dev`
 
+* If you are using gcc you need to do this to complie the code successfully:
+`g++ kmeans.cpp -o Foo -lmlpack -larmadillo -lboost_serialization -lboost_program_options`
